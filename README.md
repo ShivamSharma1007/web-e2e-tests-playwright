@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # playwright-tests
 
 End-to-end automation framework for go4WorldBusiness using Playwright and Pytest, covering critical user flows, UI validation, and regression testing.
@@ -143,4 +142,3 @@ VALID_USER_PASSWORD=test_password
 =======
 # web-e2e-tests-playwright
 End-to-end automation framework for go4WorldBusiness using Playwright and Pytest, covering critical user flows, UI validation, and regression testing.
->>>>>>> 7fc2074e46ad3227834a1ffe708642e7db8bf283
