@@ -139,6 +139,3 @@ VALID_USER_PASSWORD=test_password
 - **Environments**: Update `config/config.yaml`
 - **Test Data**: Update `testdata/user_data.json`
 - **Chrome Options**: Modify `chrome_options` in config 
-=======
-# web-e2e-tests-playwright
-End-to-end automation framework for go4WorldBusiness using Playwright and Pytest, covering critical user flows, UI validation, and regression testing.
