@@ -1,0 +1,53 @@
+{
+  "invalid_user": {
+    "email": "wrong@example.com",
+    "password": "wrongPass"
+  },
+
+  "billing_data": {
+    "india_billing": {
+      "email": "test@go4worldbusiness.com",
+      "phone": "+918888888888",
+      "contact_person": "Shivam sharma",
+      "billing_name": "Test go4 Company",
+      "street_address": "456 Business Avenue",
+      "zip": "110020",
+      "city": "Delhi",
+      "state_select": "Delhi",
+      "country": "India"
+    },
+    "us_billing": {
+      "email": "test@go4worldbusiness.com",
+      "phone": "+18888888888",
+      "contact_person": "John Doe",
+      "billing_name": "Test go4 Company",
+      "street_address": "123 Business Street",
+      "zip": "10001",
+      "city": "New York",
+      "state": "New York",
+      "country": "United States"
+    },
+    "bangladesh_billing": {
+      "email": "test@go4worldbusiness.com",
+      "phone": "+8808888888888",
+      "contact_person": "Shivam Sharma",
+      "billing_name": "Test go4 Company",
+      "street_address": "123 Business Road",
+      "zip": "1207",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "country": "Bangladesh"
+    },
+    "nepal_billing": {
+      "email": "test@go4worldbusiness.com",
+      "phone": "+9778888888888",
+      "contact_person": "Shivam Sharma",
+      "billing_name": "Test go4 Company",
+      "street_address": "789 Trade Street",
+      "zip": "44600",
+      "city": "Kathmandu",
+      "state": "Bagmati",
+      "country": "Nepal"
+    }
+  }
+}

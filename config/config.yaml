@@ -1,0 +1,32 @@
+# Playwright Test Configuration
+
+# Switch environments by changing the 'env' value
+
+env: staging
+
+base_urls:
+  dev: "https://dev.go4worldbusiness.com:9090"
+  staging: "https://uat2.go4worldbusiness.com"
+  prod: "https://www.go4worldbusiness.com"
+
+browser: chromium
+headless: false
+
+# Playwright timeout configuration (milliseconds)
+
+timeouts:
+  default: 30000
+  navigation: 30000
+
+# Browser configuration
+
+browser_options:
+  window_size: "--window-size=1920,1080"
+
+args:
+  - "--no-sandbox"
+  - "--disable-dev-shm-usage"
+  - "--disable-gpu"
+  - "--disable-extensions"
+  - "--disable-plugins"
+  - "--disable-images"
