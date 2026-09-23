@@ -1,0 +1,9 @@
+{
+    "feedback_forms_data":{
+        "message": "This is an automated test submission to verify that the feedback functionality is working correctly.",
+        "company_name": "Test go4 Company",
+        "your_name": "Mukesh Negi",
+        "phone_number": "+918888888888",
+        "products_you_deal_in": "Ginger Powder(Test only)"
+    }
+}

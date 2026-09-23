@@ -2,7 +2,7 @@
 
 # Switch environments by changing the 'env' value
 
-env: staging
+env: prod
 
 base_urls:
   dev: "https://dev.go4worldbusiness.com:9090"
