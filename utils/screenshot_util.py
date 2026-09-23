@@ -8,5 +8,5 @@ class ScreenshotUtil:
         os.makedirs(reports_dir, exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         file_path = os.path.join(reports_dir, f"{name_prefix}_{timestamp}.png")
-        page.save_screenshot(file_path)
+        page.screenshot(path=file_path)
         return file_path

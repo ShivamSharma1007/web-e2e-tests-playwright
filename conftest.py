@@ -133,13 +133,19 @@ def page(context, config):
     page.close()
 
 # Screenshots
-@pytest.hookimpl(tryfirst=True, hookwrapper=True)
-def pytest_runtest_makereport(item, call):
-    outcome = yield
-    rep = outcome.get_result()
-    page = item.funcargs.get("driver", None)
-    if page and rep.when == "call":
-        # Always take a screenshot after each test
-        ScreenshotUtil.save_screenshot(page, name_prefix=f"{item.name}_{rep.outcome}")
+@pytest.hookimpl(tryfirst=True, hookwrapper=True) 
+def pytest_runtest_makereport(item, call): 
+    outcome = yield 
+    rep = outcome.get_result() 
+    # Take screenshot only after the test execution 
+    if rep.when != "call": 
+        return 
+    page = item.funcargs.get("page") 
+    if not page: 
+            return 
+    try: 
+        screenshot_path = ScreenshotUtil.save_screenshot( page, name_prefix=f"{item.name}_{rep.outcome}" ) 
+        print( f"\nScreenshot saved: {screenshot_path}" ) 
+    except Exception as e: print( f"\nScreenshot capture failed: {e}" )
         
 # Email Report
